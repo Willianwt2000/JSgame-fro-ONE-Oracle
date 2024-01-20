@@ -6,7 +6,7 @@ let intentos = 0;
 let numeroSecreto = 0;
 //lista de numeros sorteados
 let listaDeNumeroSorteados = [];
-let numeroMaximo = 25//parseInt(prompt(`Ingrese el numero maximo de jugadas que desea hacer.`));
+let numeroMaximo = parseInt(prompt(`Ingrese el numero maximo de jugadas que desea hacer.`));
 
 //funcion para crear elemento html
 const asignarTextoElemento = (elemento, texto) => {
