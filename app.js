@@ -6,7 +6,7 @@ let intentos = 0;
 let numeroSecreto = 0;
 //lista de numeros sorteados
 let listaDeNumeroSorteados = [];
-let numeroMaximo = parseInt(prompt(`Ingrese el numero maximo de jugadas que desea hacer.`));
+let numeroMaximo = 25//parseInt(prompt(`Ingrese el numero maximo de jugadas que desea hacer.`));
 
 //funcion para crear elemento html
 const asignarTextoElemento = (elemento, texto) => {
@@ -40,7 +40,7 @@ const generarNumeroSecreto = () => {
 
 //===========================
 function condicionesIniciales() {
-  asignarTextoElemento('h1', 'Juego del numero secreto');
+  asignarTextoElemento('h1', `Juego del numero secreto     <img src="./img/ia.png" alt="Una persona mirando a la izquierda" class="container__imagen"/>`);
   asignarTextoElemento('p', `Indica un numero del 1 al ${numeroMaximo}`);
   numeroSecreto = generarNumeroSecreto();
   intentos = 1;

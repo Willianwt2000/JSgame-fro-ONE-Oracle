@@ -109,3 +109,87 @@ button {
   font-size: 32px;
   font-weight: 400;
 }
+
+.container__imagen {
+  display: none;
+}
+
+
+/* Media query para dispositivos con un ancho de pantalla entre 481px y 767px (por ejemplo, iPhone en modo paisaje o Samsung Galaxy S22 Ultra) */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 16px;
+    overflow: hidden;
+  }
+
+  .container{
+    width: 100vw;
+    height: 100vh;
+  }
+  .container__contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .container__informaciones {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container__texto{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 60;
+
+  }
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 50px;
+    outline: none;
+    border: 2px solid rgb(0, 255, 255);
+    box-shadow: 0 0 10px aqua;
+  }
+
+  .texto__parrafo {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .container__imagen {
+    width: 150px;
+  }
+
+  .container__imagen {
+    display: block;
+  }
+
+
+
+  .container__input {
+    width: 90vw;
+    outline: none;
+    border: 2px solid rgb(0, 255, 255);
+    box-shadow: 0 0 10px aqua;
+  }
+
+  .container__imagen-persona {
+    display: none;
+    /* Oculta la imagen en pantallas más pequeñas */
+  }
+
+
+}
